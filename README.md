@@ -7,7 +7,6 @@
 * Figma
 * Файловая структура по БЭМ;
 * GitHub Pages;
-* Резиновая верстка;  
 * Использование возможностей JavaScript.
 
 Ссылка на проект: https://whitedust86.github.io/mesto/
