@@ -10,4 +10,5 @@
   overflow: hidden;
   margin-top: 25px;
   text-overflow: ellipsis;
+  width: 80%;
 }

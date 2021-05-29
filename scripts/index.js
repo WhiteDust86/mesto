@@ -13,12 +13,12 @@ let profileCaption = profile.querySelector('.profile__description');
 function openPopUp() {
   inputName.value = profileName.textContent;
   inputCaption.value = profileCaption.textContent;
-  popUp.classList.add('popup__opened');
+  popUp.classList.add('popup_opened');
   inputName.focus();
 }
 
 function closePopUp() {
-  popUp.classList.remove('popup__opened');
+  popUp.classList.remove('popup_opened');
 }
 
 function saveForm(evt) {
