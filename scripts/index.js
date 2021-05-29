@@ -1,5 +1,5 @@
-let popUp = document.querySelector('.popup');
-let popUpCloseButton = popUp.querySelector('.popup__close-button');
+let popup = document.querySelector('.popup');
+let popupCloseButton = popup.querySelector('.popup__close-button');
 
 let editForm = document.querySelector('.edit-form');
 let inputName = editForm.querySelector('#profile-name');
@@ -10,25 +10,25 @@ let profileEditButton = profile.querySelector('.profile__edit-button');
 let profileName = profile.querySelector('.profile__name');
 let profileCaption = profile.querySelector('.profile__description');
 
-function openPopUp() {
+function openPopup() {
   inputName.value = profileName.textContent;
   inputCaption.value = profileCaption.textContent;
-  popUp.classList.add('popup_opened');
+  popup.classList.add('popup_opened');
   inputName.focus();
 }
 
-function closePopUp() {
-  popUp.classList.remove('popup_opened');
+function closePopup() {
+  popup.classList.remove('popup_opened');
 }
 
 function saveForm(evt) {
   evt.preventDefault();
   profileName.textContent = inputName.value;
   profileCaption.textContent = inputCaption.value;
-  closePopUp();
+  closePopup();
 }
 
 
-profileEditButton.addEventListener('click', openPopUp);
-popUpCloseButton.addEventListener('click', closePopUp);
+profileEditButton.addEventListener('click', openPopup);
+popupCloseButton.addEventListener('click', closePopup);
 editForm.addEventListener('submit', saveForm);
